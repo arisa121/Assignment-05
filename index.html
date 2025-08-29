@@ -71,7 +71,7 @@
         </div>
       </nav>
     </header>
-    <main class="h-full w-full h-screen flex flex-col sm:flex-row">
+    <main class="h-full w-full h-screen bg-green-50 flex flex-col sm:flex-row">
       <div
         class="lg:w-[80%] p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"
       >
@@ -112,7 +112,7 @@
           <!-- Buttons -->
           <div class="flex gap-3 mt-5">
             <button
-              class="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800 cursor-text-white"
+              class="copy-btn flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800 cursor-text-white"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
@@ -163,7 +163,7 @@
           <!-- Buttons -->
           <div class="flex gap-3 mt-5">
             <button
-              class="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
+              class="copy-btn flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
@@ -214,7 +214,7 @@
           <!-- Buttons -->
           <div class="flex gap-3 mt-5">
             <button
-              class="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
+              class="copy-btn flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
@@ -265,7 +265,7 @@
           <!-- Buttons -->
           <div class="flex gap-3 mt-5">
             <button
-              class="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
+              class="copy-btn flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
@@ -316,7 +316,7 @@
           <!-- Buttons -->
           <div class="flex gap-3 mt-5">
             <button
-              class="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
+              class="copy-btn flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
@@ -367,7 +367,7 @@
           <!-- Buttons -->
           <div class="flex gap-3 mt-5">
             <button
-              class="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
+              class="copy-btn flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
@@ -418,7 +418,7 @@
           <!-- Buttons -->
           <div class="flex gap-3 mt-5">
             <button
-              class="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
+              class="copy-btn flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
@@ -469,7 +469,7 @@
           <!-- Buttons -->
           <div class="flex gap-3 mt-5">
             <button
-              class="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
+              class="copy-btn flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
@@ -520,7 +520,7 @@
           <!-- Buttons -->
           <div class="flex gap-3 mt-5">
             <button
-              class="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
+              class="copy-btn flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-1 h-8 text-gray-400 hover:bg-gray-800"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
@@ -536,7 +536,7 @@
         </div>
       </div>
 
-      <div class="w-full p-4 sm:w-[20%]">
+      <div class="w-full p-4 sm:w-[20%] bg-white">
         <div class="flex justify-between items-center">
           <div class="flex items-center">
             <i class="fas fa-clock"></i>
@@ -554,6 +554,9 @@
         </div>
         <ul id="callHistoryList"></ul>
       </div>
+    <!-- কপি মেসেজ দেখানোর জন্য নিচের এই div-->
+<div id="copy-message" style="display:none;">নম্বর কপি হয়েছে</div>
+
     </main>
     <script src="js/script.js"></script>
   </body>

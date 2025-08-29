@@ -57,3 +57,27 @@ const callHistory = document.getElementById('callHistoryList')
   clearButton.addEventListener("click", () => {
   callHistory.innerHTML = "";
 });
+
+const copybuttons = document.querySelectorAll('.copy-btn');
+    const copyMessage = document.getElementById('copy-message');
+
+    copybuttons.forEach(buttonC => {
+      buttonC.addEventListener('click', () => {
+        const callNum = buttonC.closest('.call-box')
+        const numberEl = callNum.querySelector('.call-number');
+
+        const textToCopy =numberEl.innerText;
+
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          const result = copyMessage.innerText = 'নম্বর কপি হয়েছে: '+ textToCopy;
+          window.alert(result)
+          
+
+          setTimeout(() => {
+            copyMessage.style.display = 'none';
+          }, 2000);
+        }).catch(err => {
+          alert('কপি করতে সমস্যা হয়েছে!');
+        });
+      });
+    });
